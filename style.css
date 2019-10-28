@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100|Bad+Script|Dawning+of+a+New+Day|Kavivanar|Poiret+One&display=swap');
+
+body {
+
+    background: #eee;
+    padding: 0;
+    margin: 0;
+
+}
+
+#page-head {
+
+    font-size: 8vw;
+
+    font-family: "Dawning of a New Day";
+    text-align: center;
+
+    margin-top: 0px;
+
+}
+
+.dot {
+
+    display: inline-block;
+
+    width: 0.5vw;
+    height: 0.5vw;
+
+    margin: 0.5vw;
+
+    background: #f39;
+    border-radius: 100%;
+
+}
+
+.dot.invert {
+
+    background: #fff;
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+h3 {
+
+    margin: 0;
+
+}
+
+.page {
+
+    background: #f39;
+    color: #fff;
+    /* background: #5af; */
+
+    padding: 8px;
+    margin: 12px;
+
+}
+
+.page h3 {
+
+    font-family: "Dawning of a New Day";
+    font-size: 4vw;
+
+}
+
+.outline {
+
+    width: calc(100% - 17px);
+    border: 1px dashed #fff;
+    margin: 0px;
+    padding: 8px;
+
+}
+
+#page-content {
+
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 60%;
+
+    overflow: auto;
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f397;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f39a;
+}
+
+#sidebar {
+
+    position: fixed;
+    top: 0px;
+    left: 60%;
+
+    height: 100%;
+    width: 40%;
+
+    background: #f39;
+
+}
+
+#sidebar > .outline {
+
+    height: 100%;
+    margin-left: 8px;
+    border: none;
+    border-left: 1px dashed #fff;
+
+}
