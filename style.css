@@ -168,6 +168,8 @@ h3 {
 
 .button {
 
+    display: block;
+
     color: #fff;
 
     transition: background 500ms ease, color 500ms ease;
@@ -228,6 +230,8 @@ h3 {
 }
 
 #sidebar-head {
+
+    text-align: right;
 
     font-size: 5vw;
     color: #fff;
