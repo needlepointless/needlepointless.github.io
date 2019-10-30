@@ -168,7 +168,6 @@ h3 {
 
 .button {
 
-    font-weight: bold;
     color: #fff;
 
     transition: background 500ms ease, color 500ms ease;
@@ -191,5 +190,39 @@ h3 {
     background: #fff;
     color: #f39;
     cursor: pointer;
+
+}
+
+.button:not(.nobold) {
+
+    font-weight: bold;
+
+}
+
+.blog-button {
+
+    padding: 4px;
+    padding-left: 8px;
+
+    border-left: 4px solid #fff;
+
+    transition: background 500ms ease, color 500ms ease;
+
+}
+
+.blog-button .title {
+
+    margin-bottom: 8px;
+
+    display: block;
+
+}
+
+.blog-button:hover {
+
+    cursor: pointer;
+
+    background: #fff;
+    color: #f39;
 
 }
