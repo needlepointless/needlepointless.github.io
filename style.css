@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100|Bad+Script|Dawning+of+a+New+Day|Kavivanar|Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Liu+Jian+Mao+Cao&display=swap');
 
 body {
 
@@ -65,7 +65,7 @@ h3 {
 .page h3 {
 
     font-family: "Dawning of a New Day";
-    font-size: 4vw;
+    font-size: 24pt;
 
 }
 
@@ -224,5 +224,12 @@ h3 {
 
     background: #fff;
     color: #f39;
+
+}
+
+#sidebar-head {
+
+    font-size: 5vw;
+    color: #fff;
 
 }
