@@ -12,9 +12,7 @@ body {
 
     background: #eee;
 
-    position: sticky;
-    top: 16px;
-    left: 12px;
+    margin-bottom: 128px;
 
     font-size: 8vw;
 
@@ -22,19 +20,6 @@ body {
     text-align: center;
 
     margin-top: 0px;
-
-}
-
-#page-head-gradient {
-
-    position: sticky;
-    top: calc(64px + 8vw);
-    left: 12px;
-
-    width: 100%;
-    height: 32px;
-
-    background-image: linear-gradient(#eee, #eee0)
 
 }
 
@@ -134,11 +119,77 @@ h3 {
 
 }
 
+#sidebar .outline {
+
+    width: calc(100% - 25px);
+
+}
+
 #sidebar > .outline {
 
     height: 100%;
     margin-left: 8px;
     border: none;
     border-left: 1px dashed #fff;
+
+}
+
+#blurb {
+
+    color: #fff;
+
+    margin-bottom: 16px;
+
+}
+
+#blurb .logo {
+
+    border-radius: 100%;
+    border: 5px solid #f39;
+    width: 100px;
+    height: 100px;
+
+}
+
+#blurb .logo-wrapper {
+
+    width: 110px;
+    height: 110px;
+
+    position: relative;
+    left: calc(50% - 50px);
+    top: 50px;
+
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px dashed #fff;
+
+}
+
+.button {
+
+    font-weight: bold;
+    color: #fff;
+
+    transition: background 500ms ease, color 500ms ease;
+
+    border-left: 4px solid #fff;
+    padding: 4px;
+    padding-left: 8px;
+
+}
+
+.button.selected {
+
+    background: #fff;
+    color: #f39;
+
+}
+
+.button:not(.selected):hover {
+
+    background: #fff;
+    color: #f39;
+    cursor: pointer;
 
 }
