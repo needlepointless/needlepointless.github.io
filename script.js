@@ -11,12 +11,10 @@ const loadJSON = (filePath, success, error) => {
 
 createPage = () => {
 
-    console.log("stop that train!")
-
     loadJSON("./data.json",(t) => {
         let cont = ""
 
-        if (t.posts == 0) cont += "<div id='empty-page'>There's nothing here.</div>"
+        if (t.posts.length == 0) cont += "<div id='empty-page'>There's nothing here.</div>"
         
         t.posts.forEach((i) => {
 
