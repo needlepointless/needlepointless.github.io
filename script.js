@@ -9,17 +9,23 @@ const loadJSON = (filePath, success, error) => {
 	xhr.send();
 }
 
-loadJSON("./data.json",(t) => {
-    let cont = document.getElementById("page-content").innerHTML
-    
-    t.posts.forEach((i) => {
+createPage = () => {
 
-        cont += `<div class="page"><div class="outline"><h3><span class="invert dot"></span>${i.title}<span class="invert dot"></span></h3><div class="content">${i.body}</div></div>`
+    loadJSON("./data.json",(t) => {
+        let cont = ""
+        
+        t.posts.forEach((i) => {
 
+            cont += `<div class="page"><div class="outline"><h3><span class="invert dot"></span>${i.title}<span class="invert dot"></span></h3><div class="content">${i.body}</div></div>`
+
+        })
+
+        document.getElementById("page-content").innerHTML += cont
     })
 
-    document.getElementById("page-content").innerHTML = cont
-})
+}
+
+document.getElementById("page-content").onload = createPage
 
 let resize = () => {
 
