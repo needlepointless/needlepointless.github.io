@@ -13,8 +13,6 @@ createPage = () => {
 
     loadJSON("./data.json",(t) => {
         let cont = ""
-
-        if (t.posts.length == 0) cont += "<div id='empty-page'>There's nothing here.</div>"
         
         t.posts.forEach((i) => {
 
@@ -23,13 +21,11 @@ createPage = () => {
         })
 
         document.getElementById("page-content").innerHTML += cont
-    }, () => {
-
-        document.getElementById("page-content").innerHTML += "<div id='empty-page'>There's nothing here.</div>"
-
     })
 
 }
+
+createPage()
 
 let resize = () => {
 
