@@ -11,8 +11,12 @@ const loadJSON = (filePath, success, error) => {
 
 createPage = () => {
 
+    console.log("stop that train!")
+
     loadJSON("./data.json",(t) => {
         let cont = ""
+
+        if (t.posts == 0) cont += "<div id='empty-page'>There's nothing here.</div>"
         
         t.posts.forEach((i) => {
 
@@ -21,24 +25,22 @@ createPage = () => {
         })
 
         document.getElementById("page-content").innerHTML += cont
+    }, () => {
+
+        document.getElementById("page-content").innerHTML += "<div id='empty-page'>There's nothing here.</div>"
+
     })
 
 }
 
-document.getElementById("page-content").onload = createPage
-
 let resize = () => {
-
-    console.log(`${window.innerWidth}:${window.innerHeight} (${window.innerWidth/window.innerHeight})`)
 
     if (window.innerWidth/window.innerHeight < 1.1) {
 
-        console.log("Mobile")
         document.body.className = "mobile-body"
 
     } else {
 
-        console.log("Ooh")
         document.body.className = "body"
 
     }
