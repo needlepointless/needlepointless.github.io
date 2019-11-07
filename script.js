@@ -10,7 +10,7 @@ const loadJSON = (filePath, success, error) => {
 }
 
 loadJSON("./data.json",(t) => {
-    let cont = ""
+    let cont = document.getElementById("page-content").innerHTML
     
     t.posts.forEach((i) => {
 
