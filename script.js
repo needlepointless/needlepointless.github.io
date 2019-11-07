@@ -19,4 +19,6 @@ loadJSON("./data.json",(t) => {
     })
 
     document.getElementById("page-content").innerHTML = cont
+
+    console.log("aa")
 })
