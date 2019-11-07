@@ -168,6 +168,8 @@ h3 {
 
 .button {
 
+    text-decoration: none;
+
     display: block;
 
     color: #fff;
