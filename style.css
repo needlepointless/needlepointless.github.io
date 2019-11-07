@@ -78,6 +78,12 @@ h3 {
 
 }
 
+.mobile-body #page-content {
+
+    width: 100%;
+
+}
+
 #page-content {
 
     margin: 0;
@@ -104,6 +110,12 @@ h3 {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #f39a;
+}
+
+.mobile-body #sidebar {
+
+    display: none;
+
 }
 
 #sidebar {

@@ -19,13 +19,23 @@ loadJSON("./data.json",(t) => {
     })
 
     document.getElementById("page-content").innerHTML = cont
-
-    console.log("aa")
 })
 
 let resize = () => {
 
-    console.log("I was going to write.. something here but then realized this was an actual thing that's going to be on the actual internet so like no")
+    console.log(`${window.innerWidth}:${window.innerHeight} (${window.innerWidth/window.innerHeight})`)
+
+    if (window.innerWidth/window.innerHeight < 0.85) {
+
+        console.log("Mobile")
+        document.body.className = "mobile-body"
+
+    } else {
+
+        console.log("Ooh")
+        document.body.className = "body"
+
+    }
 
 }
 
