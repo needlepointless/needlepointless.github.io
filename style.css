@@ -8,11 +8,11 @@ body {
 
 }
 
-#page-head {
+.mobile-body #page-head {
 
     background: #eee;
 
-    margin-bottom: 128px;
+    margin-bottom: 16px;
 
     font-size: 15vw;
 
@@ -87,15 +87,19 @@ h3 {
 
 }
 
-.mobile-body .mobile-only {
+.mobile-menu {
 
-    display: initial;
+    display: none;
 
 }
 
-.mobile-only {
+.mobile-body .mobile-menu {
 
-    display: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 80px;
 
 }
 
@@ -224,7 +228,24 @@ h3 {
 
 }
 
-.button:not(.nobold) {
+.mobile-button {
+
+    padding: 8px;
+    margin: 4px;
+
+    text-decoration: none;
+
+    color: #f39;
+
+}
+
+.mobile-button.selected {
+
+    border-bottom: 4px solid #f39;
+
+}
+
+.mobile-button:not(.nobold) {
 
     font-weight: bold;
 
