@@ -14,7 +14,7 @@ loadJSON("./data.json",(t) => {
     
     t.posts.forEach((i) => {
 
-        cont += `<div class="post"><h3>${i.title}</h3>${i.body}</div>`
+        cont += `<div class="page"><div class="outline"><h3><span class="invert dot"></span>${i.title}<span class="invert dot"></span></h3><div class="content">${i.body}</div></div>`
 
     })
 
