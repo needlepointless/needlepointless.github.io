@@ -14,10 +14,13 @@ body {
 
     margin-bottom: 128px;
 
-    font-size: 8vw;
+    font-size: 15vw;
 
     font-family: "Dawning of a New Day";
     text-align: center;
+
+    display: block;
+    width: 100%;
 
     margin-top: 0px;
 
@@ -81,6 +84,18 @@ h3 {
 .mobile-body #page-content {
 
     width: 100%;
+
+}
+
+.mobile-body .mobile-only {
+
+    display: initial;
+
+}
+
+.mobile-only {
+
+    display: none;
 
 }
 

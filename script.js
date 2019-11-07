@@ -25,7 +25,7 @@ let resize = () => {
 
     console.log(`${window.innerWidth}:${window.innerHeight} (${window.innerWidth/window.innerHeight})`)
 
-    if (window.innerWidth/window.innerHeight < 0.85) {
+    if (window.innerWidth/window.innerHeight < 1.1) {
 
         console.log("Mobile")
         document.body.className = "mobile-body"
