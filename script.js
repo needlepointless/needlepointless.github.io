@@ -22,3 +22,12 @@ loadJSON("./data.json",(t) => {
 
     console.log("aa")
 })
+
+let resize = () => {
+
+    console.log("I was going to write.. something here but then realized this was an actual thing that's going to be on the actual internet so like no")
+
+}
+
+document.body.onload = resize
+document.body.onresize = resize
