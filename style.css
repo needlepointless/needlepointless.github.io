@@ -8,6 +8,12 @@ body {
 
 }
 
+#page-head {
+
+    display: none;
+
+}
+
 .mobile-body #page-head {
 
     background: #eee;
@@ -30,10 +36,10 @@ body {
 
     display: inline-block;
 
-    width: 0.5vw;
-    height: 0.5vw;
+    width: 0.1em;
+    height: 0.1em;
 
-    margin: 0.5vw;
+    margin: 0.1em;
 
     background: #f39;
     border-radius: 100%;
