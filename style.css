@@ -54,6 +54,8 @@ h3 {
 
 }
 
+.thumbnail { width: 100%; }
+
 .page {
 
     display: inline-block;
@@ -73,6 +75,8 @@ h3 {
 }
 
 .page h3 {
+
+    text-align: center;
 
     font-family: "Dawning of a New Day";
     font-size: 24pt;
