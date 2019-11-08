@@ -14,9 +14,9 @@ createPage = () => {
     loadJSON("./data.json",(t) => {
         let cont = ""
         
-        t.posts.forEach((i) => {
+        t.patterns.forEach((i) => {
 
-            cont += `<div class="page"><div class="outline"><h3><span class="invert dot"></span>${i.title}<span class="invert dot"></span></h3><div class="content">${i.body}</div></div>`
+            cont += `<a class="pattern page" href="${i.dest}"><div class="outline"><img class="thumbnail" src="${i.src}" /><h3><span class="invert dot"></span>${i.title}<span class="invert dot"></span></h3></a>`
 
         })
 
