@@ -16,7 +16,7 @@ createPage = () => {
         
         t.patterns.forEach((i) => {
 
-            cont += `<a class="pattern page" href="${i.dest}"><div class="outline"><img class="thumbnail" src="${i.src}" /><h3><span class="invert dot"></span>${i.title}<span class="invert dot"></span></h3></a>`
+            cont += `<a href=${i.dest} class="pattern page"><img class="thumbnail" src=${i.src} /><h3><span class="invert dot"></span>${i.title}<span class="invert dot"></span></h3><div class="blurb">${i.blurb}</div></a>`
 
         })
 

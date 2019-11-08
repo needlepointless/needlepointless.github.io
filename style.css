@@ -54,7 +54,33 @@ h3 {
 
 }
 
-.thumbnail { width: 100%; }
+.thumbnail {
+
+    width: calc(100%);
+    height: calc(100% - 2.4vw);
+
+    margin-bottom: 1.2vw;
+
+    position: relative;
+    top: calc(-1.2vw + 1.2vw);
+    left: calc(-1.2vw + 1.2vw);
+
+}
+
+.blurb {
+
+    transition: color 500ms ease;
+
+    text-align: center;
+    color: #f397;
+
+}
+
+.page:hover .blurb {
+
+    color: #f39f;
+
+}
 
 .page {
 
@@ -211,6 +237,26 @@ h3 {
     border-left: 4px solid #fff;
     padding: 4px;
     padding-left: 8px;
+
+}
+
+.pattern.page {
+
+    transition: background 500ms ease;
+
+    display: inline-block;
+
+    background: #eee;
+    border: 3px dashed #f39;
+
+    color: #f39;
+    text-decoration: none;
+
+}
+
+.pattern.page:hover {
+
+    background: #f391;
 
 }
 
