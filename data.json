@@ -3,13 +3,15 @@
     {
         "title":"Welcome to Bristol",
         "body":"This is a post",
-        "thumb": "none"
+        "thumb": "none",
+        "timestamp": "Nov. 13"
     }],
  "patterns": [
      {
         "title": "Pencil Pouch (Crazy Little Projects)",
         "body": "<a href=\"https://crazylittleprojects.com/pencil-case-tutorial/\">Source</a>",
-        "thumb": "https://crazylittleprojects.com/wp-content/uploads/2014/08/Pencilcasepatternandtutorial.png"
+        "thumb": "https://crazylittleprojects.com/wp-content/uploads/2014/08/Pencilcasepatternandtutorial.png",
+        "timestamp": "Nov. 13"
     }
  ]
 }

@@ -5,11 +5,12 @@
 </div>
 */
 
-const createPage = (t,bl,thb) => {
+const createPage = (t,bl,thb,t) => {
 
-	thb = (thb) ? thb : "./assets/default-thumbnail.png"
+    thb = (thb) ? thb : "./assets/default-thumbnail.png"
+    t = (t) ? t : "Moc. 13"
 
-	if (thb == "none") return `<div class="full page"><div class="blurb"><h3 class="title">${t}</h3>${bl}</div></div>`
+	if (thb == "none") return `<div class="full page"><div class="blurb"><h3 class="title">${t}<span class="timestamp">${t}</span></h3>${bl}</div></div>`
 	return `<div class="page"><div class="thumbnail"><img src="${thb}" /></div><div class="blurb"><h3 class="title">${t}</h3>${bl}</div></div>`
 
 }
