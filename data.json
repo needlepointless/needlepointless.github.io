@@ -1,17 +1,17 @@
 {
  "blog":[
     {
-        "title":"Welcome to Bristol",
-        "body":"This is a post",
+        "title":"Hello!",
+        "body":"It's up and running! Hopefully, I will be able to get enough stuff posted soon enough to show it to an audience.<br /><del>I'm literally just going to spam a link to this website everywhere and hope for the best.</del>",
         "thumb": "none",
-        "timestamp": "Nov. 13"
+        "timestamp": "November 11, 2019"
     }],
  "patterns": [
      {
         "title": "Pencil Pouch (Crazy Little Projects)",
         "body": "<a href=\"https://crazylittleprojects.com/pencil-case-tutorial/\">Source</a>",
         "thumb": "https://crazylittleprojects.com/wp-content/uploads/2014/08/Pencilcasepatternandtutorial.png",
-        "timestamp": "Nov. 13"
+        "timestamp": "November 11, 2019"
     }
  ]
 }

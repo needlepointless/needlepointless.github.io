@@ -160,6 +160,21 @@ body {
 
 }
 
+.page .title .timestamp {
+
+    color: var(--main);
+    font-family: "Raleway";
+    font-size: 9pt;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.2em;
+
+}
+
+.page .title .timestamp:before { content: "( "; }
+.page .title .timestamp:after { content: " )"; }
+
 .page .blurb {
 
     font-family: "Raleway";
