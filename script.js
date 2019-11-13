@@ -20,17 +20,35 @@ $(() => {
     switch (window.location.protocol) {
         case 'http:':
         case 'https:':
-            /*$.getJSON("data.json", (res) => {
+            $.getJSON("data.json", (res) => {
+
+                switch ($("body").attr("id")) {
+                    case 'blog':
+                        res.posts.forEach((v) => {
+
+                            pages.append(createPage(v.title,v.body,v.thumb))
+        
+                        })
+                        break
     
-                pages.html("")
+                    case 'patterns':
+                        res.patterns.forEach((v) => {
 
-                res.pages.forEach((v) => {
+                            pages.append(createPage(v.title,v.body,v.thumb))
+        
+                        })
+                        break
+    
+                    case 'projects':
+                        res.projects.forEach((v) => {
 
-                    pages.append(createPage(v.title,v.body,v.thumb))
+                            pages.append(createPage(v.title,v.body,v.thumb))
+        
+                        })
+                        break
+                }
 
-                })
-
-            })*/
+            })
             break
 
         default:
@@ -38,7 +56,6 @@ $(() => {
 
             switch ($("body").attr("id")) {
                 case 'blog':
-                    console.log("intrigue")
                     pages.append(createPage("Memories Bring Back, Memories Bring Back","Placeholder text","none"))
                     pages.append(createPage("Oh Horror, Oh Shamefullness, Oh Disgust! Please make me ashamed, Oh God!","Brandon Sanderson","none"))
                     break

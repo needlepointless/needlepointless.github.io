@@ -47,22 +47,27 @@ body {
     padding-bottom: 4pt;
     border-bottom: 0.5vw solid var(--main);
 
+    transition: color 700ms ease, background 700ms ease;
+
     font-size: 2em;
     font-weight: bold;
 
-    width: 31%;
+    width: 33%;
+
+}
+
+#nav-menu .button:hover {
+
+    background: var(--main);
+    color: #000;
 
 }
 
 #nav-menu .button.selected {
 
-    padding: 0.5vw;
     background: var(--main);
     color: #000;
 
-    font-family: "Raleway";
-
-    font-weight: bold;
 
 }
 
@@ -81,8 +86,6 @@ body {
 }
 
 .page:hover {
-
-    cursor: pointer;
 
     background: #fffa;
 
