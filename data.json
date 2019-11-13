@@ -1,2 +1,15 @@
-{"posts":[{"title":"Welcome to Bristol","body":"This is a post"}],
- "patterns": [{"title": "Pencil Pouch (Crazy Little Projects)", "src": "https://crazylittleprojects.com/wp-content/uploads/2014/08/Pencilcasepatternandtutorial.png", "dest": "https://crazylittleprojects.com/pencil-case-tutorial/", "blurb": "A simple pouch for holding school supplies."}]}
+{
+ "blog":[
+    {
+        "title":"Welcome to Bristol",
+        "body":"This is a post",
+        "thumb": "none"
+    }],
+ "patterns": [
+     {
+        "title": "Pencil Pouch (Crazy Little Projects)",
+        "body": "<a href=\"https://crazylittleprojects.com/pencil-case-tutorial/\">Source</a>",
+        "thumb": "https://crazylittleprojects.com/wp-content/uploads/2014/08/Pencilcasepatternandtutorial.png"
+    }
+ ]
+}

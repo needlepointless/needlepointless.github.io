@@ -22,31 +22,12 @@ $(() => {
         case 'https:':
             $.getJSON("data.json", (res) => {
 
-                switch ($("body").attr("id")) {
-                    case 'blog':
-                        res.posts.forEach((v) => {
+                res[$("body").attr("id")].forEach((v,i) => {
 
-                            pages.append(createPage(v.title,v.body,v.thumb))
-        
-                        })
-                        break
-    
-                    case 'patterns':
-                        res.patterns.forEach((v) => {
+                    console.log(i)
+                    pages.append(createPage(v.title,v.body,v.thumb))
 
-                            pages.append(createPage(v.title,v.body,v.thumb))
-        
-                        })
-                        break
-    
-                    case 'projects':
-                        res.projects.forEach((v) => {
-
-                            pages.append(createPage(v.title,v.body,v.thumb))
-        
-                        })
-                        break
-                }
+                })
 
             })
             break
