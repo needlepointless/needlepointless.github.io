@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Liu+Jian+Mao+Cao&display=swap');
+#blog { --main: #f79; }
+#patterns { --main: #9f7; }
+#projects { --main: #9bf; }
 
 body {
+    
+    background: var(--main);
 
-    background: #eee;
     padding: 0;
     margin: 0;
 
@@ -10,327 +13,153 @@ body {
 
 #page-head {
 
-    background: #eee;
-
-    margin-bottom: 16px;
-
-    font-size: 15vw;
-
-    font-family: "Dawning of a New Day";
     text-align: center;
 
-    display: block;
-    width: 100%;
-
-    margin-top: 0px;
-
-}
-
-.dot {
-
-    display: inline-block;
-
-    width: 0.1em;
-    height: 0.1em;
-
-    margin: 0.1em;
-
-    background: #f39;
-    border-radius: 100%;
-
-}
-
-.dot.invert {
-
-    background: #fff;
-    margin-left: 16px;
-    margin-right: 16px;
-
-}
-
-h3 {
-
+    font-family: "Sacramento";
+    font-size: 6em;
+    
     margin: 0;
+    margin-top: 1em;
 
 }
 
-.thumbnail {
+#nav-menu {
 
-    width: calc(100%);
-    height: calc(100% - 2.4vw);
+    background: black;
 
-    margin-bottom: 1.2vw;
-
-    position: relative;
-    top: calc(-1.2vw + 1.2vw);
-    left: calc(-1.2vw + 1.2vw);
-
-}
-
-.blurb {
-
-    transition: color 500ms ease;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.4vw;
 
     text-align: center;
-    color: #f397;
 
 }
 
-.page:hover .blurb {
-
-    color: #f39f;
-
-}
-
-.page {
+#nav-menu .button {
 
     display: inline-block;
 
-    text-align: left;
+    color: var(--main);
 
-    background: #f39;
-    color: #fff;
-    /* background: #5af; */
-
-    width: calc(100% - 6vw);
-    max-width: 40em;
-
-    padding: 1.2vw;
-    margin: 1.5vw;
-
-}
-
-.page h3 {
-
-    text-align: center;
-
-    font-family: "Dawning of a New Day";
-    font-size: 24pt;
-
-}
-
-.outline {
-
-    width: calc(100% - 17px);
-    border: 1px dashed #fff;
-    margin: 0px;
-    padding: 8px;
-
-}
-
-.mobile-menu {
-
-    display: block;
-    width: 100%;
-    text-align: center;
-
-    margin-bottom: 2vw;
-
-}
-
-#page-content {
-
-    text-align: center;
-
-    margin: 0;
-    padding: 0;
-
-    height: 100%;
-    width: 100%;
-
-    overflow: auto;
-
-}
-
-::-webkit-scrollbar {
-    width: 0.75vw;
-}
-
-::-webkit-scrollbar-track {
-    background: #fff1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #f397;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #f39a;
-}
-
-.mobile-body #sidebar {
-
-    display: none;
-
-}
-
-#sidebar {
-
-    position: fixed;
-    top: 0px;
-    left: 60%;
-
-    height: 100%;
-    width: 40%;
-
-    background: #f39;
-
-}
-
-#sidebar .outline {
-
-    width: calc(100% - 25px);
-
-}
-
-#sidebar > .outline {
-
-    height: 100%;
-    margin-left: 8px;
-    border: none;
-    border-left: 1px dashed #fff;
-
-}
-
-#blurb {
-
-    color: #fff;
-
-    margin-bottom: 16px;
-
-}
-
-#blurb .logo {
-
-    border-radius: 100%;
-    border: 5px solid #f39;
-    width: 100px;
-    height: 100px;
-
-}
-
-#blurb .logo-wrapper {
-
-    width: 110px;
-    height: 110px;
-
-    position: relative;
-    left: calc(50% - 50px);
-    top: 50px;
-
-    display: inline-block;
-    border-radius: 100%;
-    border: 1px dashed #fff;
-
-}
-
-.button {
-
+    font-family: "Raleway";
     text-decoration: none;
 
-    display: block;
+    padding-bottom: 4pt;
+    border-bottom: 0.5vw solid var(--main);
 
-    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
 
-    transition: background 500ms ease, color 500ms ease;
-
-    border-left: 4px solid #fff;
-    padding: 4px;
-    padding-left: 8px;
+    width: 31%;
 
 }
 
-.pattern.page {
+#nav-menu .button.selected {
 
-    transition: background 500ms ease;
+    padding: 0.5vw;
+    background: var(--main);
+    color: #000;
 
-    display: inline-block;
-
-    background: #eee;
-    border: 3px dashed #f39;
-
-    color: #f39;
-    text-decoration: none;
-
-}
-
-.pattern.page:hover {
-
-    background: #f391;
-
-}
-
-.button.selected {
-
-    background: #fff;
-    color: #f39;
-
-}
-
-.button:not(.selected):hover {
-
-    background: #fff;
-    color: #f39;
-    cursor: pointer;
-
-}
-
-.mobile-button {
-
-    padding: 8px;
-    margin: 4px;
-
-    text-decoration: none;
-
-    color: #f39;
-
-}
-
-.mobile-button.selected {
-
-    border-bottom: 4px solid #f39;
-
-}
-
-.mobile-button:not(.nobold) {
+    font-family: "Raleway";
 
     font-weight: bold;
 
 }
 
-.blog-button {
+.page {
 
-    padding: 4px;
-    padding-left: 8px;
+    transition: background 700ms ease;
 
-    border-left: 4px solid #fff;
+    position: relative;
 
-    transition: background 500ms ease, color 500ms ease;
+    background: #ffff;
 
-}
-
-.blog-button .title {
-
-    margin-bottom: 8px;
-
-    display: block;
+    margin: 1em;
+    padding: 0.5em;
+    padding-left: 4.25em;
 
 }
 
-.blog-button:hover {
+.page:hover {
 
     cursor: pointer;
 
-    background: #fff;
-    color: #f39;
+    background: #fffa;
 
 }
 
-#sidebar-head {
+.page .thumbnail {
 
-    text-align: right;
+    display: inline-block;
 
-    font-size: 5vw;
-    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 4em;
+
+    margin: 0;
+    padding: 0;
+    
+    overflow: hidden;
+
+}
+
+.page .thumbnail img {
+
+    transition: transform 700ms ease, filter 700ms ease;
+
+    object-fit: cover;
+    filter: blur(2px) grayscale(35%);
+    
+    transform: scale(1.1);
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.page:hover .thumbnail img {
+
+    filter: blur(0px);
+    transform: scale(1);
+
+}
+
+.page .blurb {
+
+    border: 0.25em dashed var(--main);
+    border-left: none;
+
+    margin: 0;
+    padding: 1em;
+
+}
+
+.page.full {
+
+    padding-left: 0.5em;
+
+}
+
+.page.full .blurb {
+
+    border-left: 0.25em dashed var(--main);
+
+}
+
+.page .title {
+
+    font-family: "Sacramento";
+    font-size: 18pt;
+    margin: 0;
+
+}
+
+.page .blurb {
+
+    font-family: "Raleway";
+    font-size: 11pt;
 
 }
