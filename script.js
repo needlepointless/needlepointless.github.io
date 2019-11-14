@@ -26,7 +26,7 @@ $(() => {
                 res[$("body").attr("id")].forEach((v,i) => {
 
                     console.log(i)
-                    pages.append(createPage(v.title,v.body,v.thumb))
+                    pages.append(createPage(v.title,v.body,v.thumb,v.timestamp))
 
                 })
 

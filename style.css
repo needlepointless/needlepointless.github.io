@@ -44,6 +44,7 @@ body {
     font-family: "Raleway";
     text-decoration: none;
 
+    margin: 0;
     padding-bottom: 4pt;
     border-bottom: 0.5vw solid var(--main);
 
@@ -72,6 +73,8 @@ body {
 }
 
 .page {
+    
+    text-overflow: ellipsis;
 
     transition: background 700ms ease;
 
