@@ -25,8 +25,7 @@ $(() => {
 
                 res[$("body").attr("id")].forEach((v,i) => {
 
-                    console.log(i)
-                    pages.append(createPage(v.title,v.body,v.thumb,v.timestamp))
+                    pages.prepend(createPage(v.title,v.body,v.thumb,v.timestamp))
 
                 })
 
@@ -38,14 +37,14 @@ $(() => {
 
             switch ($("body").attr("id")) {
                 case 'blog':
-                    pages.append(createPage("Memories Bring Back, Memories Bring Back","Placeholder text","none"))
-                    pages.append(createPage("Oh Horror, Oh Shamefullness, Oh Disgust! Please make me ashamed, Oh God!","Brandon Sanderson","none"))
+                    pages.prepend(createPage("Memories Bring Back, Memories Bring Back","Placeholder text","none"))
+                    pages.prepend(createPage("Oh Horror, Oh Shamefullness, Oh Disgust! Please make me ashamed, Oh God!","Brandon Sanderson","none"))
                     break
 
                 case 'patterns':
-                        pages.append(createPage("Evelyn","How do I know that me and you, see the same color the same way that you and me see; is my red blue for you, is my green your green too."))
-                        pages.append(createPage("Noir","Could it be true we see differing hues and say we do then how would we discover this facct and even if we did would it have any impact.","https://previews.123rf.com/images/elenka1/elenka11809/elenka1180902205/108863132-floral-pattern-wallpaper-baroque-damask-seamless-background-black-and-gold-ornament.jpg"))
-                        break
+                    pages.prepend(createPage("Evelyn","How do I know that me and you, see the same color the same way that you and me see; is my red blue for you, is my green your green too."))
+                    pages.prepend(createPage("Noir","Could it be true we see differing hues and say we do then how would we discover this facct and even if we did would it have any impact.","https://previews.123rf.com/images/elenka1/elenka11809/elenka1180902205/108863132-floral-pattern-wallpaper-baroque-damask-seamless-background-black-and-gold-ornament.jpg"))
+                    break
 
                 case 'projects':
                     break
