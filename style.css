@@ -184,3 +184,10 @@ body {
     font-size: 11pt;
 
 }
+
+img {
+
+    max-width: 100%;
+    text-align: center;
+
+}
