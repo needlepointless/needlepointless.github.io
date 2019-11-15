@@ -11,7 +11,7 @@ const createPage = (t,bl,thb,time) => {
     time = (time) ? time : "Mocember 13, 0000"
 
 	if (thb == "none") return `<div class="full page"><div class="blurb"><h3 class="title">${t}<div class="timestamp">${time}</div></h3>${bl}</div></div>`
-	return `<div class="page"><div class="thumbnail"><img src="${thb}" /></div><div class="blurb"><h3 class="title">${t}</h3><div class="timestamp">${time}</div>${bl}</div></div>`
+	return `<div class="page"><div class="thumbnail"><img src="${thb}" /></div><div class="blurb"><h3 class="title">${t}<div class="timestamp">${time}</div></h3>${bl}</div></div>`
 
 }
 

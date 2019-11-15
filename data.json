@@ -20,7 +20,7 @@
     },
     {
         "title": "Got a Sewing Machine!",
-        "body": "<img src=\"./assets/sew-mach.png\" /><br/>I got a sewing machine! It's a bit late to actually use it for the assignment, but it's still nice to have one.<br/>I suppose now is as good a time as any to start getting into stuff. Basically, sewing is simple. With your trusty running stitch and the practice to keep your lines straight, you can do a lot. Despite that though, once you try to get into it in any real depth, it gets very complicated very quickly. I'll be trying to express what I've learned and understand of sewing on this website over the next week, and probably longer. I know some of these early posts are seeming very block-texty, but please stick around for the rest, I promise they'll be more readable.",
+        "body": "<div style=\"text-align: center;\" style=\"width: 30%; border-radius: 20px; padding: 0.75em;margin-bottom: 5em; border: .25em dashed var(--main)\"><img src=\"./assets/sew-mach.png\" /></div><br/>I got a sewing machine! It's a bit late to actually use it for the assignment, but it's still nice to have one.<br/>I suppose now is as good a time as any to start getting into stuff. Basically, sewing is simple. With your trusty running stitch and the practice to keep your lines straight, you can do a lot. Despite that though, once you try to get into it in any real depth, it gets very complicated very quickly. I'll be trying to express what I've learned and understand of sewing on this website over the next week, and probably longer. I know some of these early posts are seeming very block-texty, but please stick around for the rest, I promise they'll be more readable.",
         "thumb": "none",
         "timestamp": "November 14, 2019"
     }
