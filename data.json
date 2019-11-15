@@ -2,7 +2,7 @@
  "blog":[
     {
         "title":"Hello!",
-        "body":"It's up and running! Hopefully, I will be able to get enough stuff posted soon enough to show it to an audience.<br /><del>I'm literally just going to spam a link to this website everywhere and hope for the best.</del>",
+        "body":"It's up and running! This website is technically for a project at school, although I plan to at least try to keep it going after the project ends. Hopefully, I will be able to get enough stuff on here soon enough for the project.<br /><del>Honestly, I'm literally just going to spam a link to this website everywhere and hope for the best.</del>",
         "thumb": "none",
         "timestamp": "November 11, 2019"
     },
@@ -13,10 +13,16 @@
         "timestamp": "November 13, 2019"
     },
     {
-        "title": "Also...",
+        "title": "Completely Unrelated but...",
         "body": "Did you know there's a <a href=\"http://ismacs.net/\">society of sewing machine collectors</a>? And that they're exactly as cool as they sound?",
         
         "timestamp": "November 13, 2019"
+    },
+    {
+        "title": "Got a Sewing Machine!",
+        "body": "img.png<br/>I got a sewing machine! It's a bit late to actually use it for the assignment, but it's still nice to have one.<br/>I suppose now is as good a time as any to start getting into stuff. Basically, sewing is simple. With your trusty running stitch and the practice to keep your lines straight, you can do a lot. Despite that though, once you try to get into it in any real depth, it gets very complicated very quickly. I'll be trying to express what I've learned and understand of sewing on this website over the next week, and probably longer. I know some of these early posts are seeming very block-texty, but please stick around for the rest, I promise they'll be more readable.",
+        "thumb": "none",
+        "timestamp": "November 14, 2019"
     }
  ],
  "patterns": [
